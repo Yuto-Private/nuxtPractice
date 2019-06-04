@@ -43,6 +43,7 @@ module.exports = {
 
   styleResources: {
     scss: [
+      '~/assets/sass/reset.scss',
       '~/assets/sass/variable.scss',
       '~/assets/sass/mixin.scss'
       ]

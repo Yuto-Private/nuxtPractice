@@ -1,18 +1,19 @@
 <template>
 
-  
+  <Hero/>
 
 </template>
 
 <script>
 
-import Logo from '~/components/Logo.vue'
+import Hero from '~/components/Hero.vue'
 
 export default {
 
   components: {
-    Logo
+    Hero
   }
+  
 }
 </script>
 
