@@ -40,6 +40,12 @@ module.exports = {
   */
   modules: ['@nuxtjs/style-resources'],
 
+  router: {
+    middleware: 'stats'
+  },
+
+  watchQuery: true,
+
   /*
    ** Axios module configuration
    */

@@ -1,6 +1,6 @@
 <template>
 
-
+  <nuxt-link to="/about/">About page</nuxt-link>
   
 </template>
 
