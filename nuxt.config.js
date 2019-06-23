@@ -22,8 +22,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
-
+  loading: '~/components/Loading.vue' ,
   /*
   ** Global CSS
   */
@@ -41,6 +40,22 @@ module.exports = {
   */
   modules: ['@nuxtjs/style-resources'],
 
+  /*
+   ** Axios module configuration
+   */
+  axios: {
+    // See https://github.com/nuxt-community/axios-module#options
+  },
+
+  server: {
+    port: 8000, // デフォルト: 3000
+    host: '0.0.0.0', // デフォルト: localhost,
+  },
+
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
+
   styleResources: {
     scss: [
       '~/assets/sass/reset.scss',
@@ -48,7 +63,6 @@ module.exports = {
       '~/assets/sass/mixin.scss'
       ]
   },
-
 
   /*
   ** Build configuration
